@@ -16,6 +16,6 @@ class TestController extends Controller
 
     public function getTest(){
         $test = Test::all();
-        return response()->json([$test]);
+        return response()->json($test);
     }
 }
